@@ -27,6 +27,7 @@ public class Click_Manager : MonoBehaviour
         clickedTimes += times;
         UpdateCounter();
         ChooseHatchCliks();
+        //Shop_Manager.instance.Check();
     }
 
     public void UpdateCounter()
