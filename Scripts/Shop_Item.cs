@@ -15,7 +15,7 @@ public class Shop_Item : ScriptableObject
     public string _itemName = string.Empty;
     public Sprite icon;
     public int cost = 10;
-    public ItemType itemType;
+    public ItemType __itemType;
     public int clickerBoosterMultipler = 0; //Levave null if the other type is selected
     public int clickBoosterMultipler = 0;//Levave null if the other type is selected
     public Farm farm = null; //Levave null if the other type is selected

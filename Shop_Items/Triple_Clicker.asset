@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17d2695040863cd40a0f799078115304, type: 3}
   m_Name: Triple_Clicker
   m_EditorClassIdentifier: 
-  id: 1
+  id: 2
   _itemName: Triple Clicker
   icon: {fileID: 0}
-  cost: 10
-  itemType: 1
+  cost: 200
+  __itemType: 0
   clickerBoosterMultipler: 0
   clickBoosterMultipler: 2
   farm: {fileID: 0}

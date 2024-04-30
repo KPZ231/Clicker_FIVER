@@ -11,7 +11,7 @@ public class Click_Manager : MonoBehaviour
     public TextMeshProUGUI counter = null;
     public Slider hatchSlider = null;
     [SerializeField] private int clicksToHatch = 0;
-
+    public int times = 1;
 
     private bool hatched = false;
     private bool getDragonClicks = false;
@@ -22,12 +22,11 @@ public class Click_Manager : MonoBehaviour
         instance = this;
     }
 
-    public void Click(int times)
+    public void Click()
     {
         clickedTimes += times;
         UpdateCounter();
         ChooseHatchCliks();
-        //Shop_Manager.instance.Check();
     }
 
     public void UpdateCounter()
@@ -37,6 +36,7 @@ public class Click_Manager : MonoBehaviour
         hatchSlider.value = clickedTimes;
     }
 
+    
 
     private void ChooseHatchCliks()
     {
@@ -48,7 +48,7 @@ public class Click_Manager : MonoBehaviour
 
         if (!hatched)
         {
-            if (clickedTimes == clicksToHatch)
+            if (clickedTimes >= clicksToHatch)
             {
                 Dragon_Manager.instance.Hatch();
 

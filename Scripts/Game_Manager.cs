@@ -5,11 +5,14 @@ public class Game_Manager : MonoBehaviour
 {
 
     public static Game_Manager instance { get; private set; }
+    [HideInInspector] public bool isPlaying = false;
+
 
     private void Start()
     {
         // Load();
         instance = this;
+        isPlaying = true;
     }
 
     private void OnApplicationQuit()
@@ -18,8 +21,10 @@ public class Game_Manager : MonoBehaviour
     }
 
 
-    private void Update() {
-        if(Input.GetKeyDown(KeyCode.S)){
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
             Save();
         }
     }
@@ -33,7 +38,7 @@ public class Game_Manager : MonoBehaviour
     //         Debug.Log(Click_Manager.instance.counter.name);
     //         Click_Manager.instance.counter.text = tempTimesClick.ToString();
     //         Click_Manager.instance.clickedTimes = tempTimesClick;
-            
+
     //         PlayerPrefs.Save();
     //     }
     //     else

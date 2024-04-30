@@ -9,14 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17d2695040863cd40a0f799078115304, type: 3}
-  m_Name: Double_Clicker
+  m_Script: {fileID: 11500000, guid: 45f601758b353ce45ba7a32695dbf36c, type: 3}
+  m_Name: Farm
   m_EditorClassIdentifier: 
-  id: 1
-  _itemName: Double Clicker
-  icon: {fileID: 0}
-  cost: 100
-  __itemType: 0
-  clickerBoosterMultipler: 0
-  clickBoosterMultipler: 2
-  farm: {fileID: 0}
+  id: 0
+  farmName: Farm 1
+  eggsGeneratedPerMin: 2
+  eggsMultipler: 0
+  currentFarmLevel: 0
+  farmCost: 0
+  upgradeCost: 30

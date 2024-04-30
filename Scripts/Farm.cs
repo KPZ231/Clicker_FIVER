@@ -10,4 +10,6 @@ public class Farm : ScriptableObject
     public int eggsGeneratedPerMin = 1;
     public int eggsMultipler;
     public int currentFarmLevel = 0;
+    public int farmCost = 0;
+    public int upgradeCost = 0;
 }
